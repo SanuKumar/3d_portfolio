@@ -1,10 +1,20 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import { Home, Contact, Projects, About } from "./pages";
+
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3x1 font-bold underline text-red-500">
-        Hello World!
-      </h1>
-    </div>
+    <main className="bg-slate-00/20">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contacts" element={<Contact />} />
+        </Routes>
+      </Router>
+    </main>
   );
 };
 
