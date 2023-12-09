@@ -14,7 +14,7 @@ import { useFrame, useThree } from "@react-three/fiber";
 import islandScene from "../assets/3d/island.glb";
 import { a } from "@react-spring/three";
 
-const Island = ({ isRotating, setIsRotating, ...props }) => {
+const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
   const islandRef = useRef();
 
   const { nodes, materials } = useGLTF(islandScene);
@@ -29,7 +29,7 @@ const Island = ({ isRotating, setIsRotating, ...props }) => {
     e.preventDefault();
     setIsRotating(true);
 
-    const clientX = e.touches ? e.touches[0].clientX : e.touches;
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
 
     lastX.current = clientX;
   };
@@ -61,7 +61,7 @@ const Island = ({ isRotating, setIsRotating, ...props }) => {
       islandRef.current.rotation.y += 0.01 * Math.PI;
     } else if (e.key === "ArrowRight") {
       if (!isRotating) setIsRotating(true);
-      islandRef.current.rotation.y -= 0.1 * Math.PI;
+      islandRef.current.rotation.y -= 0.01 * Math.PI;
     }
   };
 
@@ -77,16 +77,16 @@ const Island = ({ isRotating, setIsRotating, ...props }) => {
     canvas.addEventListener("pointerdown", handlePointerDown);
     canvas.addEventListener("pointerup", handlePointerUp);
     canvas.addEventListener("pointermove", handlePointerMove);
-    window.addEventListener("keydown", handleKeyDown);
-    window.addEventListener("keyup", handleKeyUp);
+    document.addEventListener("keydown", handleKeyDown);
+    document.addEventListener("keyup", handleKeyUp);
 
     // Remove event listeners when component unmounts
     return () => {
       canvas.removeEventListener("pointerdown", handlePointerDown);
       canvas.removeEventListener("pointerup", handlePointerUp);
       canvas.removeEventListener("pointermove", handlePointerMove);
-      window.removeEventListener("keydown", handleKeyDown);
-      window.removeEventListener("keyup", handleKeyUp);
+      document.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("keyup", handleKeyUp);
     };
   }, [gl, handlePointerDown, handlePointerUp, handlePointerMove]);
 
