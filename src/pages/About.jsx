@@ -6,6 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 import { skills, experiences } from "../constants";
+import CTA from "../components/CTA";
 
 const About = () => {
   return (
@@ -14,7 +15,8 @@ const About = () => {
         Hello, I'm{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
           Sanu
-        </span>
+        </span>{" "}
+        👋
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
@@ -29,8 +31,8 @@ const About = () => {
         <h3 className="subhead-text">My Skills</h3>
 
         <div className="mt-16 flex flex-wrap gap-12">
-          {skills.map((skill, i) => (
-            <div key={i} className="block-container w-20 h-20">
+          {skills.map((skill) => (
+            <div key={skill.name} className="block-container w-20 h-20">
               <div className="btn-back rounde-xl" />
               <div className="btn-front rounded-xl flex justify-center items-center">
                 <img
@@ -56,6 +58,9 @@ const About = () => {
           <VerticalTimeline>
             {experiences.map((experience) => (
               <VerticalTimelineElement
+                contentArrowStyle={{
+                  borderRight: "7px solid  rgb(33, 150, 243)",
+                }}
                 key={experience.company_name}
                 date={experience.date}
                 icon={
@@ -63,7 +68,7 @@ const About = () => {
                     <img
                       src={experience.icon}
                       alt={experience.company_name}
-                      className="w-[60%] h=[60%] object-contain"
+                      className="w-[60%] h-[60%] object-contain"
                     />
                   </div>
                 }
@@ -80,7 +85,7 @@ const About = () => {
                     {experience.title}
                   </h3>
                   <p
-                    className="text-black-500 font-medium font-base"
+                    className="text-black-500 font-medium text-base"
                     style={{ margin: 0 }}
                   >
                     {experience.company_name}
@@ -101,6 +106,9 @@ const About = () => {
           </VerticalTimeline>
         </div>
       </div>
+
+      <hr className="border-slate-200" />
+      <CTA />
     </section>
   );
 };
