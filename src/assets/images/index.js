@@ -1,15 +1,8 @@
-import hero from './hero.jpg'
-import meta from './meta.png'
-import shopify from './shopify.png'
-import starbucks from './starbucks.png'
-import tesla from './tesla.png'
-import logo from './logo.svg'
+import hero from "./hero.jpg";
+import infosys from "./infosys.png";
+import wipro from "./wipro.png";
+import ptw from "./ptw.png";
+import uniphore from "./uniphore.png";
+import logo from "./logo.svg";
 
-export {
-    hero,
-    meta,
-    shopify,
-    starbucks,
-    tesla,
-    logo
-}
+export { hero, infosys, wipro, ptw, uniphore, logo };

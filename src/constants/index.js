@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { infosys, wipro, ptw, uniphore } from "../assets/images";
 import {
   car,
   contact,
@@ -24,6 +24,7 @@ import {
   tailwindcss,
   threads,
   typescript,
+  fitvenger,
 } from "../assets/icons";
 
 export const skills = [
@@ -62,11 +63,11 @@ export const skills = [
     name: "MongoDB",
     type: "Database",
   },
-  {
-    imageUrl: motion,
-    name: "Motion",
-    type: "Animation",
-  },
+  // {
+  //   imageUrl: motion,
+  //   name: "Motion",
+  //   type: "Animation",
+  // },
   {
     imageUrl: mui,
     name: "Material-UI",
@@ -92,69 +93,69 @@ export const skills = [
     name: "Redux",
     type: "State Management",
   },
-  {
-    imageUrl: sass,
-    name: "Sass",
-    type: "Frontend",
-  },
+  // {
+  //   imageUrl: sass,
+  //   name: "Sass",
+  //   type: "Frontend",
+  // },
   {
     imageUrl: tailwindcss,
     name: "Tailwind CSS",
     type: "Frontend",
   },
-  {
-    imageUrl: typescript,
-    name: "TypeScript",
-    type: "Frontend",
-  },
+  // {
+  //   imageUrl: typescript,
+  //   name: "TypeScript",
+  //   type: "Frontend",
+  // },
 ];
 
 export const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#accbe1",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#fbc3bc",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#b7e4c7",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
     title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#a2d2ff",
-    date: "Jan 2023 - Present",
+    company_name: "Infosys",
+    icon: infosys,
+    iconBg: "#FFFFFF",
+    date: "Nov 2022 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "React Developer",
+    company_name: "Wipro",
+    icon: wipro,
+    iconBg: "#FFFFFF",
+    date: "Sept 2021 - Nov 2022",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Frontend Developer",
+    company_name: "Pole to Win",
+    icon: ptw,
+    iconBg: "#FFFFFF",
+    date: "July 2020 - Sept 2021",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company_name: "Uniphore Software Systems",
+    icon: uniphore,
+    iconBg: "#FFFFFF",
+    date: "Jan 2017 - June 2020",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -173,62 +174,62 @@ export const socialLinks = [
   {
     name: "GitHub",
     iconUrl: github,
-    link: "https://github.com/YourGitHubUsername",
+    link: "https://github.com/SanuKumar",
   },
   {
     name: "LinkedIn",
     iconUrl: linkedin,
-    link: "https://www.linkedin.com/in/YourLinkedInUsername",
+    link: "https://www.linkedin.com/in/sanu-kumar-414b78b2/",
   },
 ];
 
 export const projects = [
-  {
-    iconUrl: pricewise,
-    theme: "btn-back-red",
-    name: "Amazon Price Tracker",
-    description:
-      "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
-    link: "https://github.com/adrianhajdin/pricewise",
-  },
-  {
-    iconUrl: threads,
-    theme: "btn-back-green",
-    name: "Full Stack Threads Clone",
-    description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: "https://github.com/adrianhajdin/threads",
-  },
-  {
-    iconUrl: car,
-    theme: "btn-back-blue",
-    name: "Car Finding App",
-    description:
-      "Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.",
-    link: "https://github.com/adrianhajdin/project_next13_car_showcase",
-  },
+  // {
+  //   iconUrl: pricewise,
+  //   theme: "btn-back-red",
+  //   name: "Amazon Price Tracker",
+  //   description:
+  //     "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
+  //   link: "https://github.com/adrianhajdin/pricewise",
+  // },
+  // {
+  //   iconUrl: threads,
+  //   theme: "btn-back-green",
+  //   name: "Full Stack Threads Clone",
+  //   description:
+  //     'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
+  //   link: "https://github.com/adrianhajdin/threads",
+  // },
   {
     iconUrl: snapgram,
     theme: "btn-back-pink",
-    name: "Full Stack Instagram Clone",
+    name: "Broshop: eCommerce App",
     description:
-      "Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.",
-    link: "https://github.com/adrianhajdin/social_media_app",
+      "eCommerce web application created with M(ongoDb)E(xpress)R(eact)N(ode) Stack. It has user authentication system, an admin user who can add new products in the app, check for order and payments and also choose which order has been delivered from the store.",
+    link: "https://github.com/SanuKumar/broshop",
+  },
+  {
+    iconUrl: fitvenger,
+    theme: "btn-back-blue",
+    name: "Fitvengers: Workout app",
+    description:
+      "Designed and built a web app for fitness with a comprehensive exercise library",
+    link: "https://github.com/SanuKumar/fitvengers",
   },
   {
     iconUrl: estate,
     theme: "btn-back-black",
-    name: "Real-Estate Application",
+    name: "Instaverse: Redefining Social Media Connectivity",
     description:
-      "Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.",
-    link: "https://github.com/adrianhajdin/projects_realestate",
+      "A fullstack social-media application that allows users to share their pictures with others. Users can create, edit, or delete their own posts.",
+    link: "https://github.com/SanuKumar/instaverse",
   },
   {
     iconUrl: summiz,
     theme: "btn-back-yellow",
-    name: "AI Summarizer Application",
+    name: "Lyriks: Music App",
     description:
-      "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
-    link: "https://github.com/adrianhajdin/project_ai_summarizer",
+      "A Better Spotify 2.0 Clone Music App with React 18! (Tailwind, Shazam, Redux).",
+    link: "https://github.com/SanuKumar/lyriks",
   },
 ];
